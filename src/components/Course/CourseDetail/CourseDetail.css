@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.course-detail-container {
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding-top: 100px;
+}
+
+.course-detail-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 3rem;
+}
+
+.back-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: fit-content;
+}
+
+.back-arrow:hover {
+  color: #22c55e;
+  background-color: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  text-decoration: none;
+  transform: translateX(-2px);
+}
+
+.back-arrow-icon {
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s ease;
+}
+
+.back-arrow:hover .back-arrow-icon {
+  color: #22c55e;
+}
+
+.course-detail-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #16a34a, #22c55e, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.course-main-layout {
+  display: grid;
+  grid-template-columns: 2fr 350px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.course-left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.course-header-row .course-detail-title {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.course-header-row .enroll-button {
+  display: none; /* Hide enroll button in header */
+}
+
+.course-image-section {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.course-detail-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.15), 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-description-section {
+  margin-top: 0;
+}
+
+.course-detail-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.course-right-section {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  position: static;
+  min-height: calc(100vh - 200px); /* Ensure it has enough height */
+  margin-top: 3.5rem; /* Move all sidebar elements down slightly more */
+}
+
+.sidebar-enroll-button {
+  margin-bottom: 2rem; /* Space between enroll button and course info */
+}
+
+.sidebar-course-info {
+  margin-bottom: 2rem; /* Space between course info and instructors */
+}
+
+.sidebar-instructors {
+  /* This will naturally flow after the course info */
+}
+
+.enroll-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.3);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+}
+
+.enroll-button:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 6px 24px rgba(34, 197, 94, 0.4);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+
+.course-info-card,
+.course-instructions-card,
+.course-instructors-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  min-height: 200px;
+}
+
+.course-instructors-card {
+  margin-bottom: 0;
+}
+
+.course-instructors-card .instructors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.course-info-card h3,
+.course-instructions-card h3,
+.course-instructors-card h3 {
+  color: #22c55e;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.course-instructions-card h4 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-grid .info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-grid .info-item:last-child {
+  border-bottom: none;
+}
+
+.info-grid .info-item strong {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.info-grid .info-item span {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.learning-outcomes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.learning-outcomes li {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border-left: 3px solid #22c55e;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.learning-outcomes li:last-child {
+  margin-bottom: 0;
+}
+
+.course-info-menu,
+.course-instructors-menu {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+}
+
+.menu-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #22c55e;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.info-value {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.instructor-item {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border-left: 3px solid #22c55e;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.enroll-button.enrolled {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  cursor: not-allowed;
+}
+
+.enroll-button.enrolled:hover {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  transform: none;
+  color: white;
+}
+
+.enroll-button.coming-soon {
+  background: linear-gradient(135deg, #374151, #4b5563);
+  color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.enroll-button.coming-soon:hover {
+  background: linear-gradient(135deg, #374151, #4b5563);
+  transform: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-main-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .course-detail-title {
+    font-size: 2.5rem;
+  }
+  
+  .course-detail-content {
+    padding: 0 1rem;
+  }
+  
+  .course-right-section {
+    width: 100%;
+  }
+
+  .sidebar-enroll-button,
+  .sidebar-course-info,
+  .sidebar-instructors {
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-instructors {
+    flex: none;
+  }
+
+  .course-instructors-card {
+    height: auto;
+  }
+
+  .course-instructors-card .instructors-list {
+    justify-content: flex-start;
+  }
+  
+  .course-detail-image {
+    height: 250px;
+  }
+
+  .course-header-row .enroll-button {
+    display: inline-block;
+  }
+} 
