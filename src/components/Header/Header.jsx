@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { SignedIn, SignedOut, useUser as clerkUseUser, useClerk } from "@clerk/clerk-react";
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSignUpHovered, setIsSignUpHovered] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { isSignedIn, isLoaded } = clerkUseUser();
+  const isSignedIn = true;
   const location = useLocation();
   
   // Clerk authentication functionality
-  const {signOut} = useClerk()  
-  const handleSignOut = async () => {
-    await signOut()
-    localStorage.clear()
-  }
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +48,7 @@ const Header = () => {
 
   // Determine if we should show landing page navigation
   // Only show landing page nav on home route (/) when user is not signed in and Clerk has loaded
-  const shouldShowLandingNav = isLoaded && !isSignedIn && location.pathname === '/';
+  const shouldShowLandingNav = !isSignedIn && location.pathname === '/';
 
   const headerStyle = {
     position: isSignedIn ? 'absolute' : 'fixed',
@@ -259,7 +254,7 @@ const Header = () => {
 
       <div style={authContainerStyle}>
         {/* Only show auth buttons when Clerk has loaded */}
-        {isLoaded && (
+        {true && (
           <>
               <div style={{ position: 'relative' }} data-hamburger-menu>
                 <button 

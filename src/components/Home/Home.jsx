@@ -13,40 +13,11 @@ import { getYoutubeVideo } from '../generalHelper/youtubeAPI';
 
 
 //external dependenices
-import { SignedIn, SignedOut, SignInButton, SignUpButton, SignOutButton, useUser as clerkUseUser } from "@clerk/clerk-react";
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-  //1.creating logging into account func
-    //clerk status
-    const [userEmail, setUserEmail] = useState(null)
-    const {user, isSignedIn} = clerkUseUser()
-    useEffect(()=>{
-        if (isSignedIn){
-            createNvemAccount(user.firstName, user.lastName, user.emailAddresses[0].emailAddress)
-            localStorage.setItem("the_current_user", user.emailAddresses[0].emailAddress)
-            setUserEmail(user.emailAddresses[0].emailAddress)
-        }
-    }, [isSignedIn])
-
-  //2. fetching youtube data for mini course suggestor [link to course]
-      let currentVideoId = suggestedVideoData.videoId
-      const [displayImg, setDisplayImg] = useState({})
-  
-      const {data:fullYoutubeData} = useQuery({
-          queryKey:['youtube-mini-video', currentVideoId],
-          queryFn:async () => getYoutubeVideo(currentVideoId),
-          // Removed staleTime: 0 to prevent unnecessary refetches
-          enabled: !!currentVideoId, // Only fetch when videoId exists
-      })
-  
-      useEffect(() =>{
-          if (fullYoutubeData){
-              setDisplayImg(fullYoutubeData[0].snippet.thumbnails.maxres)
-          }
-      }, [fullYoutubeData])
 
   // FAQ functionality
   const [openFaq, setOpenFaq] = useState(null);
