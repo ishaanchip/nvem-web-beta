@@ -110,7 +110,6 @@ const Home = () => {
                 height: '200px',
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 borderRadius: '16px',
-                border: '2px dashed rgba(255, 255, 255, 0.3)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -119,7 +118,7 @@ const Home = () => {
                 opacity: 0.7,
                 flexShrink: 0
               }}>
-                Photo
+                <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1754856856/Chip_Learning_Logo_-_Prelim_3_xgh850.png" alt="ishaan_chiplunkar_img"/ >
               </div>
               <div style={{ flex: 1, textAlign: 'left' }}>
                 <h3 style={{
@@ -166,7 +165,6 @@ const Home = () => {
                 height: '200px',
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 borderRadius: '16px',
-                border: '2px dashed rgba(255, 255, 255, 0.3)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -175,7 +173,7 @@ const Home = () => {
                 opacity: 0.7,
                 flexShrink: 0
               }}>
-                Photo
+                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1755539444/Chip_Learning_Logo_-_Prelim_4_hyyjsp.png" alt="robert_zhang_img"/ >
               </div>
               <div style={{ flex: 1, textAlign: 'right' }}>
                 <h3 style={{
@@ -219,7 +217,6 @@ const Home = () => {
                 height: '200px',
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 borderRadius: '16px',
-                border: '2px dashed rgba(255, 255, 255, 0.3)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -228,7 +225,7 @@ const Home = () => {
                 opacity: 0.7,
                 flexShrink: 0
               }}>
-                Photo
+                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1755539615/Chip_Learning_Logo_-_Prelim_5_yhfdve.png" alt="vrishin_chenreddy_img"/ >
               </div>
               <div style={{ flex: 1, textAlign: 'left' }}>
                 <h3 style={{
