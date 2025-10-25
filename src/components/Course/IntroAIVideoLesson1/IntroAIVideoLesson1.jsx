@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 const IntroAIVideoLesson1 = () => {
-    const videoId = suggestedVideoData.videoId;
+    const videoId = "03eZAwAXIQU"
 
     return (
         <div className='intro-ai-video-lesson1-shell'>

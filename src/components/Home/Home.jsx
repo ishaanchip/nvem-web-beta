@@ -43,6 +43,7 @@ const Home = () => {
 
   return (
     <div>
+      <div className='computer-view'>
       <Header />
       <div style={{ paddingTop: '120px', textAlign: 'center' }}>
         <BetaBadge />
@@ -54,35 +55,79 @@ const Home = () => {
           margin: '0 auto',
           color: 'white'
         }}>
-          <section id="home" style={{ marginBottom: '4rem' }}>
-            <h1 style={{ 
-              fontSize: '6rem', 
-              fontWeight: 'bold', 
-              marginTop: '1rem',
-              marginBottom: '1rem',
-              textAlign: 'center',
-              background: 'linear-gradient(135deg, #16a34a, #22c55e, #ffffff)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text'
-            }}>
-              AI Education Simplified
-            </h1>
-            <p style={{ 
-              fontSize: '1.8rem', 
-              textAlign: 'center',
-              marginTop: '0.5rem',
-              marginBottom: '2rem',
-              opacity: 0.9,
-              color: 'white',
-              maxWidth: '800px',
-              margin: '0.5rem auto 2rem auto'
-            }}>
-              NVEM is a 501(c)(3) non-profit organization that offers a practical introduction to AI.
-            </p>
-            
-
-          </section>
+            <section id="home" style={{ marginBottom: '4rem' }} className='main-title'>
+              <h1 style={{ 
+                fontSize: '4rem', 
+                fontWeight: 'bold', 
+                marginTop: '1rem',
+                marginBottom: '1rem',
+                textAlign: 'center',
+                background: 'linear-gradient(135deg, #16a34a, #22c55e, #ffffff)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                AI Education Simplified
+              </h1>
+              <p style={{ 
+                fontSize: '1.1rem', 
+                textAlign: 'center',
+                marginTop: '0.5rem',
+                marginBottom: '2rem',
+                opacity: 0.9,
+                color: 'white',
+                maxWidth: '800px',
+                margin: '0.5rem auto 2rem auto'
+              }}>
+                NVEM is a 501(c)(3) non-profit organization that offers a practical introduction to AI.
+              </p>
+              
+            </section>
+          <section className='latest-nvem' style={{
+                maxWidth: '900px',
+                margin: '0 auto 4rem auto',
+                gap: '2rem'
+              }}>
+                <div style={{
+                  width: '350px',
+                  height: '200px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  borderRadius: '16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'white',
+                  fontSize: '0.9rem',
+                  opacity: 0.7,
+                  flexShrink: 0
+                }}>
+                  <a href="https://www.instagram.com/p/DPKLlOJDyCl/?img_index=1" target="_blank"><img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1761427629/Screenshot_2025-10-25_at_5.27.05_PM_yhzbsp.png" alt="nvem_gum_spring_event" / ></a>
+                </div>
+                <div style={{ flex: 1, textAlign: 'left' }}>
+                  <h3 style={{
+                    fontSize: '2rem',
+                    fontWeight: 'bold',
+                    color: 'white',
+                  }}>
+                    NVEM's Latest Event
+                  </h3>
+                  <p style={{
+                    fontSize: '1.2rem',
+                    color: '#22c55e',
+                    marginBottom: '0.8rem',
+                    fontWeight: '600'
+                  }}>
+                    📍 Gumspring Library
+                  </p>
+                  <p style={{
+                    fontSize: '1rem',
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    lineHeight: '1.6'
+                  }}>
+                    💌 click the picture to check out our instagram for more!
+                  </p>
+                </div>
+            </section>
 
           <section id="about" style={{ marginBottom: '4rem', marginTop: '1rem' }}>
             <h2 style={{ 
@@ -624,7 +669,34 @@ const Home = () => {
       </div>
 
       <Footer />
-    </div>
+      </div>
+      <div className='mobile-view'>
+      <section id="home" style={{ marginBottom: '4rem' }} className='main-title'>
+              <h1  className='mobile-header' style={{ 
+                fontSize: '4rem', 
+                fontWeight: 'bold', 
+                textAlign: 'center',
+                background: 'linear-gradient(135deg, #16a34a, #22c55e, #ffffff)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                Hello NVEM user!
+              </h1>
+              <p style={{ 
+                fontSize: '1.1rem', 
+                textAlign: 'center',
+                opacity: 0.9,
+                color: 'white',
+                maxWidth: '800px',
+              }}>
+                Please use a computer or a larger screen for the best user experience!
+              </p>
+              
+            </section>
+      </div>
+      </div>
+
   )
 }
 
