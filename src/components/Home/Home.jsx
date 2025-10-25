@@ -122,10 +122,23 @@ const Home = () => {
                   <p style={{
                     fontSize: '1rem',
                     color: 'rgba(255, 255, 255, 0.8)',
+                    marginBottom: '0.8rem',
                     lineHeight: '1.6'
                   }}>
                     💌 click the picture to check out our instagram for more!
                   </p>
+                  <a href="https://docs.google.com/presentation/d/18zQlIfBFs_IhWdeylbRvP04kU81mtF9NPqMKkxyj9mY/edit?usp=sharing" target='_blank'>
+                    <p style={{
+                      fontSize: '1rem',
+                      background: 'linear-gradient(135deg, #16a34a, #22c55e, #ffffff)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      lineHeight: '1.6'
+                    }}>
+                      view the discussed lesson here
+                    </p>
+                  </a>
                 </div>
             </section>
 
