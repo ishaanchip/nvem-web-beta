@@ -249,14 +249,14 @@ const Home = () => {
                   marginBottom: '0.8rem',
                   fontWeight: '600'
                 }}>
-                  Chief Information Officer
+                  President
                 </p>
                 <p style={{
                   fontSize: '1rem',
                   color: 'rgba(255, 255, 255, 0.8)',
                   lineHeight: '1.6'
                 }}>
-                  Overseeing technical infrastructure and ensuring seamless learning experiences for all students.
+                  Leading the organization's mission to make AI education accessible and practical for students.
                 </p>
               </div>
             </div>
