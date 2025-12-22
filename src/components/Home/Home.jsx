@@ -89,8 +89,8 @@ const Home = () => {
                 gap: '2rem'
               }}>
                 <div style={{
-                  width: '350px',
-                  height: '200px',
+                  width: '300px',
+                  height: '250px',
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   borderRadius: '16px',
                   display: 'flex',
@@ -101,7 +101,7 @@ const Home = () => {
                   opacity: 0.7,
                   flexShrink: 0
                 }}>
-                  <a href="https://www.instagram.com/p/DPKLlOJDyCl/?img_index=1" target="_blank"><img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1761427629/Screenshot_2025-10-25_at_5.27.05_PM_yhzbsp.png" alt="nvem_gum_spring_event" / ></a>
+                  <a href="https://www.instagram.com/p/DSiWf0CD-hZ/?img_index=1" target="_blank"><img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1766424198/Screenshot_2025-12-22_at_12.23.14_PM_qli2jm.png" alt="nvem_in_house_event" / ></a>
                 </div>
                 <div style={{ flex: 1, textAlign: 'left' }}>
                   <h3 style={{
@@ -117,7 +117,7 @@ const Home = () => {
                     marginBottom: '0.8rem',
                     fontWeight: '600'
                   }}>
-                    📍 Gumspring Library
+                    📍 In House Event
                   </p>
                   <p style={{
                     fontSize: '1rem',
@@ -127,7 +127,7 @@ const Home = () => {
                   }}>
                     💌 click the picture to check out our instagram for more!
                   </p>
-                  <a href="https://docs.google.com/presentation/d/18zQlIfBFs_IhWdeylbRvP04kU81mtF9NPqMKkxyj9mY/edit?usp=sharing" target='_blank'>
+                  <a href="https://docs.google.com/presentation/d/1PZkwLpOfnNBWJCiNDOGBcqfpqYoBnXGYXy0nFcT-SkA/edit?usp=sharing" target='_blank'>
                     <p style={{
                       fontSize: '1rem',
                       background: 'linear-gradient(135deg, #16a34a, #22c55e, #ffffff)',
