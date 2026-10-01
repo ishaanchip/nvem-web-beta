@@ -154,114 +154,10 @@ const Home = () => {
             </h2>
 
 
-            {/* Ishaan - Left side */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              marginBottom: '4rem',
-              maxWidth: '900px',
-              margin: '0 auto 4rem auto',
-              gap: '2rem'
-            }}>
-              <div style={{
-                width: '200px',
-                height: '200px',
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                borderRadius: '16px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'white',
-                fontSize: '0.9rem',
-                opacity: 0.7,
-                flexShrink: 0
-              }}>
-                <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1754856856/Chip_Learning_Logo_-_Prelim_3_xgh850.png" alt="ishaan_chiplunkar_img"/ >
-              </div>
-              <div style={{ flex: 1, textAlign: 'left' }}>
-                <h3 style={{
-                  fontSize: '2rem',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  marginTop: '-0.5rem',
-                  marginBottom: '0.2rem'
-                }}>
-                  Ishaan Chiplunkar
-                </h3>
-                <p style={{
-                  fontSize: '1.2rem',
-                  color: '#22c55e',
-                  marginBottom: '0.8rem',
-                  fontWeight: '600'
-                }}>
-                  Chief Technology Officer
-                </p>
-                <p style={{
-                  fontSize: '1rem',
-                  color: 'rgba(255, 255, 255, 0.8)',
-                  lineHeight: '1.6'
-                }}>
-                  Developing innovative educational technologies and leading the technical vision for NVEM's platform.
-                </p>
-              </div>
-            </div>
             
 
 
-            {/* Robert - Right side */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              marginBottom: '4rem',
-              maxWidth: '900px',
-              margin: '0 auto 4rem auto',
-              gap: '2rem',
-              flexDirection: 'row-reverse'
-            }}>
-              <div style={{
-                width: '200px',
-                height: '200px',
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                borderRadius: '16px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'white',
-                fontSize: '0.9rem',
-                opacity: 0.7,
-                flexShrink: 0
-              }}>
-                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1755539444/Chip_Learning_Logo_-_Prelim_4_hyyjsp.png" alt="robert_zhang_img"/ >
-              </div>
-              <div style={{ flex: 1, textAlign: 'right' }}>
-                <h3 style={{
-                  fontSize: '2rem',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  marginTop: '-0.5rem',
-                  marginBottom: '0.2rem'
-                }}>
-                  Robert Zhang
-                </h3>
-                <p style={{
-                  fontSize: '1.2rem',
-                  color: '#22c55e',
-                  marginBottom: '0.8rem',
-                  fontWeight: '600'
-                }}>
-                  President
-                </p>
-                <p style={{
-                  fontSize: '1rem',
-                  color: 'rgba(255, 255, 255, 0.8)',
-                  lineHeight: '1.6'
-                }}>
-                  Leading the organization's mission to make AI education accessible and practical for students.
-                </p>
-              </div>
-            </div>
-
-                        {/* Vrishin - Left side */}
+                        {/* Aarnav - Left side */}
                         <div style={{
               display: 'flex',
               alignItems: 'center',
@@ -283,7 +179,7 @@ const Home = () => {
                 opacity: 0.7,
                 flexShrink: 0
               }}>
-                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1755539615/Chip_Learning_Logo_-_Prelim_5_yhfdve.png" alt="vrishin_chenreddy_img"/ >
+                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1790883742/IMG_2586_qnnv9v.png" alt="aarnav_bujamella_img"/ >
               </div>
               <div style={{ flex: 1, textAlign: 'left' }}>
                 <h3 style={{
@@ -293,7 +189,7 @@ const Home = () => {
                   marginTop: '-0.5rem',
                   marginBottom: '0.2rem'
                 }}>
-                  Vrishin Chenreddy
+                  Aarnav Bujamella
                 </h3>
                 <p style={{
                   fontSize: '1.2rem',
