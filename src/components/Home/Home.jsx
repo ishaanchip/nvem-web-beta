@@ -232,7 +232,7 @@ const Home = () => {
                 opacity: 0.7,
                 flexShrink: 0
               }}>
-                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1792258092/IMG_0380_nxugor.heic" alt="arjun_somavarpu_img"/ >
+                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1792258637/IMG_0380_m0segk.png" alt="arjun_somavarpu_img"/ >
               </div>
               <div style={{ flex: 1, textAlign: 'left' }}>
                 <h3 style={{
@@ -294,7 +294,7 @@ const Home = () => {
                   marginTop: '-0.5rem',
                   marginBottom: '0.2rem'
                 }}>
-                  Arjun Somavarpu
+                  Rayan Patel
                 </h3>
                 <p style={{
                   fontSize: '1.2rem',
