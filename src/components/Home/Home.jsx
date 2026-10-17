@@ -83,7 +83,7 @@ const Home = () => {
               </p>
               
             </section>
-          <section className='latest-nvem' style={{
+          {/* <section className='latest-nvem' style={{
                 maxWidth: '900px',
                 margin: '0 auto 4rem auto',
                 gap: '2rem'
@@ -140,7 +140,7 @@ const Home = () => {
                     </p>
                   </a>
                 </div>
-            </section>
+            </section> */}
 
           <section id="about" style={{ marginBottom: '4rem', marginTop: '1rem' }}>
             <h2 style={{ 
@@ -157,8 +157,8 @@ const Home = () => {
             
 
 
-                        {/* Aarnav - Left side */}
-                        <div style={{
+              {/* Aarnav - Left side */}
+              <div style={{
               display: 'flex',
               alignItems: 'center',
               marginBottom: '4rem',
@@ -208,6 +208,113 @@ const Home = () => {
                 </p>
               </div>
             </div>
+
+
+              {/* Arjun - Left side */}
+                          <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              marginBottom: '4rem',
+              maxWidth: '900px',
+              margin: '0 auto 4rem auto',
+              gap: '2rem'
+            }}>
+              <div style={{
+                width: '200px',
+                height: '200px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '0.9rem',
+                opacity: 0.7,
+                flexShrink: 0
+              }}>
+                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1792258092/IMG_0380_nxugor.heic" alt="arjun_somavarpu_img"/ >
+              </div>
+              <div style={{ flex: 1, textAlign: 'left' }}>
+                <h3 style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: '-0.5rem',
+                  marginBottom: '0.2rem'
+                }}>
+                  Arjun Somavarpu
+                </h3>
+                <p style={{
+                  fontSize: '1.2rem',
+                  color: '#22c55e',
+                  marginBottom: '0.8rem',
+                  fontWeight: '600'
+                }}>
+                  Director of Outreach
+                </p>
+                <p style={{
+                  fontSize: '1rem',
+                  color: 'rgba(255, 255, 255, 0.8)',
+                  lineHeight: '1.6'
+                }}>
+                  Led outreach initiatives, established partnerships with local schools and organizations, and coordinated STEM education events to expand community impact.
+                </p>
+              </div>
+            </div>
+
+                          {/* Arjun - Rayan side */}
+                          <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              marginBottom: '4rem',
+              maxWidth: '900px',
+              margin: '0 auto 4rem auto',
+              gap: '2rem'
+            }}>
+              <div style={{
+                width: '200px',
+                height: '200px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderRadius: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '0.9rem',
+                opacity: 0.7,
+                flexShrink: 0
+              }}>
+                  <img src="https://res.cloudinary.com/dsrfbwrcb/image/upload/v1792258089/IMG_6585_lxxogn.png" alt="rayan_patel_img"/ >
+              </div>
+              <div style={{ flex: 1, textAlign: 'left' }}>
+                <h3 style={{
+                  fontSize: '2rem',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  marginTop: '-0.5rem',
+                  marginBottom: '0.2rem'
+                }}>
+                  Arjun Somavarpu
+                </h3>
+                <p style={{
+                  fontSize: '1.2rem',
+                  color: '#22c55e',
+                  marginBottom: '0.8rem',
+                  fontWeight: '600'
+                }}>
+                   Director of Programs & Curriculum
+                </p>
+                <p style={{
+                  fontSize: '1rem',
+                  color: 'rgba(255, 255, 255, 0.8)',
+                  lineHeight: '1.6'
+                }}>
+                Designed and organized STEM workshops, developed hands-on coding and AI curricula, and coordinated instructors to deliver engaging educational programs to students.                </p>
+              </div>
+            </div>
+
+
+            
 
           </section>
 
